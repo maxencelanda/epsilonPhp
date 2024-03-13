@@ -14,7 +14,7 @@
 <body>
     <div id="top">
         <ul id="connection">
-            <li id="signup"><a href=""><i class="fas fa-user-plus"></i> Inscription</a></li> &nbsp; <li id="signin"><a href=""><i class="fas fa-sign-in-alt"></i> Connexion</a> </li>
+            <li id="signup"><a href="inscription.php"><i class="fas fa-user-plus"></i> Inscription</a></li> &nbsp; <li id="signin"><a href=""><i class="fas fa-sign-in-alt"></i> Connexion</a> </li>
         </ul>
     </div>
 
