@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b30f5d3ef8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="background.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./front/background.css">
+    <link rel="stylesheet" href="./front/style.css">
 </head>
 <body>
     <div id="top">
         <ul id="connection">
-            <li id="signup"><a href=""><i class="fas fa-user-plus"></i> Inscription</a></li> &nbsp; <li id="signin"><a href=""><i class="fas fa-sign-in-alt"></i> Connexion</a> </li>
+            <li id="signup"><a href="./back/inscription.php"><i class="fas fa-user-plus"></i> Inscription</a></li> &nbsp; <li id="signin"><a href="./back/connexion.php"><i class="fas fa-sign-in-alt"></i> Connexion</a> </li>
         </ul>
     </div>
 
