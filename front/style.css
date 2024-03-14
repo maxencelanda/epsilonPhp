@@ -78,6 +78,10 @@ a{
     color: white;
     font-weight: normal;
 }
+.center-form {
+    margin-left: 40%;
+    margin-top: 20px;
+}
 @media only screen and (max-width: 600px) {
     .square{
         width: 80vw;
