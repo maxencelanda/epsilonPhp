@@ -45,9 +45,8 @@ if(!is_dir($target_dir)){
 }
 
 // ici démare la boucle pour un multi upload
-var_dump($_FILES);
-foreach($_FILES as $file){
-  $target_file = $target_dir .'/'. basename($file["name"]);
+for($i = 0; $i < count($_FILES["fileToUpload"]["name"]); $i++){
+  $target_file = $target_dir .'/'. basename($_FILES["fileToUpload"]["name"][$i]);
   $uploadOk = 1;
   $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
@@ -60,7 +59,7 @@ foreach($_FILES as $file){
     }
 
     // Check file size
-    if ($file["size"] > 500000) {
+    if ($_FILES["fileToUpload"]["size"][$i] > 500000) {
       echo "Désolé, votre fichier est trop gros";
       $uploadOk = 0;
     }
@@ -77,8 +76,8 @@ foreach($_FILES as $file){
       echo " Votre fichier n'a pas été uploadé.";
     // if everything is ok, try to upload file
     } else {
-      if (move_uploaded_file($file["tmp_name"], $target_file)) {
-        echo "Le fichier ". htmlspecialchars( basename( $file["name"])). " a été uploadé.";
+      if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"][$i], $target_file)) {
+        echo "Le fichier ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"][$i])). " a été uploadé.<br>";
       } else {
         echo "Désolé, il y a eu une erreur durant l'upload.";
       }
