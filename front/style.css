@@ -60,7 +60,7 @@ h1{
 #connection a{color: white;}
 #connection a:hover{color: rgb(247,184,37);}
 section{
-    display: flex;
+    display: block;
     height: 100vh;
 }
 #inside{

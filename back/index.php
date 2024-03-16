@@ -33,18 +33,22 @@ if($isConnected) {
 			}
 				
 			?>
+			<br>
+			<section>
+				<h2 id="courses">Badges disponibles</h2>
+				<ul id="badges-list">
+					<li><i class="fa fa-graduation-cap"></i> Apprenti</li>
+					<li><i class="fa fa-handshake"></i> Développeur</li>
+					<li><i class="fa fa-hand-holding"></i> Passeur</li>
+					<li><i class="fa fa-star"></i> Guide</li>
+				</ul>
+				<a href="uploadedWorks.php">Voir tous les fichiers uploadés</a>
+			</section>
+			
+		</div>
 		</section>
 
-		<section>
-			<h2 id="courses">Badges disponibles</h2>
-			<ul id="badges-list">
-				<li><i class="fa fa-graduation-cap"></i> Apprenti</li>
-				<li><i class="fa fa-handshake"></i> Développeur</li>
-				<li><i class="fa fa-hand-holding"></i> Passeur</li>
-				<li><i class="fa fa-star"></i> Guide</li>
-			</ul>
-		</section>
-	</div>
+		
 
 	<div id="background">
         <div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
